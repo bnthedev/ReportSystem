@@ -1,3 +1,7 @@
+#---- /report-reload ----#
+#permission: reportsystem.reload
+
+
 #---- /report ----#
 
 reportMessage: '&6&lReport System &8>>> &7(@reportid) Player &6@player &7reported player &6@reportedplayer&7 with reason:&6 @reason'
@@ -5,13 +9,13 @@ reportSent: '&6&lReport System &8>>> &7Report was sent with ID &6%reportId%&7. R
 fewArguments: '&6&lServer &8>>> &7Few arguments! [/report <player> <reason>]'
 
 #---- /report-find ----#
-
+#permission: reportsystem.find
 findResult: "&6&lReport System &8>>> &7Informations about report \n&7 Report sender: &6%reporter%\n &7Reported player: &6%reportedPlayer%\n &7Reason: &6%reason%\n &7Timestamp: &6%timestamp%"
 findReportUsage: '&6&lServer &8>>> &7Few arguments! [/report-find <id>]'
 findResultNotFound: "&6&lReport System &8>>> &7Report with ID &6%reportId%&7 was not found."
 
 #---- /report-done ----#
-
+#permission: reportsystem.done
 reportDoneMessage: '&6&lReport System &8>>> &7Report &6%reportId%&7 was marked as solved and was deleted'
 reportDoneUsage: '&6&lReport System &8>>> &7Few arguments! [/report-done <id>]'
 
@@ -20,7 +24,8 @@ reportDoneUsage: '&6&lReport System &8>>> &7Few arguments! [/report-done <id>]'
 adminHelpCommand: '&6&lReport System &8>>> &7Commands:\n &6/report &7- Command to report a player \n&6 /report-find <ID> &7- command to find report by ID\n &6/report-done <ID> &7- Command to mark the report as solved.'
 playerHelpCommand: '&6&lReport System &8>>> &7Use &6/report <player> <reason> &7to report player!'
 
-#---- /report-gui ----# zatím nefunkční
+#---- /report-gui ----# not working yet
+#permission: reportsystem.gui
 
 reportGuiLore:
   - "&7Report ID: &e@reportid"
@@ -29,12 +34,12 @@ reportGuiLore:
   - "&7Reason: &e@reason"
 
 #---- /report-list ----#
-
+#permission: reportsystem.helperlist
 listPlayersMessage: '&6&lReport System &8>>> &7List of helpers: &6@players'
 
 #---- /report-resethelperlist ----#
-
+#permission: reportsystem.resethelperlist
 resetHelpersMessage: '&6&lReport System &8>>> &7The helper list has been reset.'
 
-#---- REPORTY ----#
+#---- reports ----#
 reports:
