@@ -1,0 +1,20 @@
+name: ReportSystem
+version: '${project.version}'
+main: report.report.Main
+api-version: 1.20
+commands:
+  report:
+  report-reload:
+    permission: reportsystem.reload
+  report-find:
+    permission: reportsystem.find
+  report-done:
+    permission: reportsystem.done
+  report-help:
+  report-gui:
+    permission: reportsystem.gui
+  report-helperlist:
+    permission: reportsystem.helperlist
+  report-resethelperlist:
+    permission: reportsystem.resethelpers
+
